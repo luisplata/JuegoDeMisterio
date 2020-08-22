@@ -12,7 +12,13 @@ public class ControladorDeCamaraDeEscenario : MonoBehaviour
     private void Start()
     {
         //buscamos la mitad de la lista
-        GameObject.FindGameObjectWithTag("Camara").GetComponent<CinemachineVirtualCamera>().Follow = referenciasDePantalla[referenciaInicial].transform;
+        //GameObject.FindGameObjectWithTag("GameController").GetComponent<Rigidbody2D>().MovePosition(referenciasDePantalla[referenciaInicial].transform.position);
+
+    }
+
+    private void Update()
+    {
+        GameObject.FindGameObjectWithTag("GameController").GetComponent<Rigidbody2D>().velocity = referenciasDePantalla[referenciaInicial].transform.position - GameObject.FindGameObjectWithTag("GameController").transform.position;
     }
 
 
@@ -20,7 +26,7 @@ public class ControladorDeCamaraDeEscenario : MonoBehaviour
     {
         panelDerecho.SetActive(true);
         referenciaInicial--;
-        GameObject.FindGameObjectWithTag("Camara").GetComponent<CinemachineVirtualCamera>().Follow = referenciasDePantalla[referenciaInicial].transform;
+        //GameObject.FindGameObjectWithTag("GameController").GetComponent<Rigidbody2D>().MovePosition(referenciasDePantalla[referenciaInicial].transform.position);
         if(referenciaInicial <= 0)
         {
             //ocultar panel
@@ -32,7 +38,7 @@ public class ControladorDeCamaraDeEscenario : MonoBehaviour
     {
         panelIzquierdo.SetActive(true);
         referenciaInicial++;
-        GameObject.FindGameObjectWithTag("Camara").GetComponent<CinemachineVirtualCamera>().Follow = referenciasDePantalla[referenciaInicial].transform;
+        //GameObject.FindGameObjectWithTag("GameController").GetComponent<Rigidbody2D>().MovePosition(referenciasDePantalla[referenciaInicial].transform.position);
         if (referenciaInicial >= referenciasDePantalla.Count -1)
         {
             //ocultar panel

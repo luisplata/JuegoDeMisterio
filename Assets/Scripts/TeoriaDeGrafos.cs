@@ -27,6 +27,24 @@ public class TeoriaDeGrafos : MonoBehaviour
         verticeFinal = vertices[random];
     }
 
+    private void Start()
+    {
+        //vamos a colocar aleatoriamente el vertice final
+        List<ObjetoInteractuable> objetosQuePuedenSerFinales = new List<ObjetoInteractuable>();
+        foreach(GameObject iterado in GameObject.FindGameObjectsWithTag("objetosInteractuables"))
+        {
+            if(iterado.GetComponent<ObjetoInteractuable>().dialogoFinal != "")
+            {
+                Debug.Log(iterado.name);
+                objetosQuePuedenSerFinales.Add(iterado.GetComponent<ObjetoInteractuable>());
+            }
+        }
+
+        int random = UnityEngine.Random.Range(0, objetosQuePuedenSerFinales.Count);
+        verticeFinal = objetosQuePuedenSerFinales[random];
+
+    }
+
     public List<string> DialogosDeEsteObjeto(ObjetoInteractuable origen)
     {
         Dictionary<ObjetoInteractuable, int> caminos = new Dictionary<ObjetoInteractuable, int>();
@@ -46,7 +64,7 @@ public class TeoriaDeGrafos : MonoBehaviour
         myList.Sort((pair1, pair2) => pair1.Value.CompareTo(pair2.Value));
         
         List<string> dialogos = new List<string>();
-        
+        //TODO se debe colocar random el orden de la escritura de dialogos, porque siempre el primero es el correcto.
         foreach(KeyValuePair<ObjetoInteractuable, int> l in myList)
         {
             if (l.Value.Equals(myList[0].Value))
