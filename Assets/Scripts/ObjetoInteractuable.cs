@@ -26,7 +26,7 @@ public class ObjetoInteractuable : MonoBehaviour
     public void GenerarDialogosDeAristas()
     {
         List<string> dialogos = new List<string>();
-        Debug.Log(padre.verticeFinal.gameObject.name + " - " + this.name+ " son iguales -> "+ padre.verticeFinal.Equals(this));
+        //Debug.Log(padre.verticeFinal.gameObject.name + " - " + this.name+ " son iguales -> "+ padre.verticeFinal.Equals(this));
         if (padre.verticeFinal.Equals(this))
         {
             dialogos.Add(dialogoFinal);

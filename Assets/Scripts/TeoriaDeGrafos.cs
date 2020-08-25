@@ -35,7 +35,7 @@ public class TeoriaDeGrafos : MonoBehaviour
         {
             if(iterado.GetComponent<ObjetoInteractuable>().dialogoFinal != "")
             {
-                Debug.Log(iterado.name);
+                //Debug.Log(iterado.name);
                 objetosQuePuedenSerFinales.Add(iterado.GetComponent<ObjetoInteractuable>());
             }
         }

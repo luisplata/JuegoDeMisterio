@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2232056734380815180
+--- !u!1 &6934600279459519227
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,50 +8,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2232056734380815183}
-  - component: {fileID: 2232056734380815177}
-  - component: {fileID: 2232056734380815182}
+  - component: {fileID: 6934600279459519228}
+  - component: {fileID: 6934600279459519230}
+  - component: {fileID: 6934600279459519229}
   m_Layer: 5
-  m_Name: FechaDerecha
+  m_Name: FlachaIzquierda
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &2232056734380815183
+--- !u!224 &6934600279459519228
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2232056734380815180}
+  m_GameObject: {fileID: 6934600279459519227}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 2232056735756105935}
+  m_Father: {fileID: 6934600280491209388}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.22210693, y: 34}
-  m_SizeDelta: {x: 0.44441223, y: -690}
+  m_AnchoredPosition: {x: 0.3774414, y: -0.000061035156}
+  m_SizeDelta: {x: 0.75491333, y: -690}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &2232056734380815177
+--- !u!222 &6934600279459519230
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2232056734380815180}
+  m_GameObject: {fileID: 6934600279459519227}
   m_CullTransparentMesh: 0
---- !u!114 &2232056734380815182
+--- !u!114 &6934600279459519229
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2232056734380815180}
+  m_GameObject: {fileID: 6934600279459519227}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -64,7 +64,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 8180256446945823853, guid: 79ba63df048efc04797c4b206fea7cf6,
+  m_Sprite: {fileID: 3833895849690059128, guid: 79ba63df048efc04797c4b206fea7cf6,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &2232056735756105932
+--- !u!1 &6934600280491209387
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -83,52 +83,52 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2232056735756105935}
-  - component: {fileID: 2232056735756105928}
-  - component: {fileID: 2232056735756105929}
-  - component: {fileID: 2232056735756105934}
+  - component: {fileID: 6934600280491209388}
+  - component: {fileID: 6934600280491209390}
+  - component: {fileID: 6934600280491209389}
+  - component: {fileID: 6934600280491209391}
   m_Layer: 5
-  m_Name: PanelDerecha
+  m_Name: PanelIzquierdo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &2232056735756105935
+--- !u!224 &6934600280491209388
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2232056735756105932}
+  m_GameObject: {fileID: 6934600280491209387}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 2232056734380815183}
+  - {fileID: 6934600279459519228}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.85555553, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.155, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &2232056735756105928
+--- !u!222 &6934600280491209390
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2232056735756105932}
+  m_GameObject: {fileID: 6934600280491209387}
   m_CullTransparentMesh: 0
---- !u!114 &2232056735756105929
+--- !u!114 &6934600280491209389
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2232056735756105932}
+  m_GameObject: {fileID: 6934600280491209387}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -151,13 +151,13 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &2232056735756105934
+--- !u!114 &6934600280491209391
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2232056735756105932}
+  m_GameObject: {fileID: 6934600280491209387}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -190,12 +190,23 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 2232056735756105929}
+  m_TargetGraphic: {fileID: 6934600280491209389}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_MethodName: ClickDerecha
+        m_MethodName: ClickIzquierda
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_MethodName: DesactivarDialogo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

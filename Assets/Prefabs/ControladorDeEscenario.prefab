@@ -48,10 +48,14 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  referenciaInicial: 1
+  - {fileID: 0}
+  referenciaInicial: 3
   panelIzquierdo: {fileID: 0}
   panelDerecho: {fileID: 0}
   panelDeDialogo: {fileID: 0}
+  blooPower: {fileID: 0}
+  tiempoQuePuedeUsarElBloodPower: 10
+  corutinaParametrizable: 1
 --- !u!114 &2299074343284759936
 MonoBehaviour:
   m_ObjectHideFlags: 0
