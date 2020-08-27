@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ControladorDeCamaraDeEscenario : MonoBehaviour
@@ -51,6 +52,7 @@ public class ControladorDeCamaraDeEscenario : MonoBehaviour
             //ocultar panel
             panelIzquierdo.SetActive(false);
         }
+        DesactivarDialogo();
     }
 
     public void ClickDerecha()
@@ -63,6 +65,7 @@ public class ControladorDeCamaraDeEscenario : MonoBehaviour
             //ocultar panel
             panelDerecho.SetActive(false);
         }
+        DesactivarDialogo();
     }
 
     public void ActivarDialogo()
@@ -171,6 +174,11 @@ public class ControladorDeCamaraDeEscenario : MonoBehaviour
                     break;
             }
         }
+    }
+
+    public void SalirAlMapaGeneral()
+    {
+        SceneManager.LoadScene("MapaGeneral");
     }
 
 }

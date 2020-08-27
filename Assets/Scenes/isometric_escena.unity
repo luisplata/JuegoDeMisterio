@@ -3349,7 +3349,8 @@ PrefabInstance:
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
       propertyPath: dialogoFinal
-      value: Aqui hay otro final...
+      value: "Durante mucho tiempo las iglesias fueron parte de la expaci\xF3n de
+        conocimiento, es posible que te encuentres algo bueno en esos lugares"
       objectReference: {fileID: 0}
     - target: {fileID: 8149442843524621158, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
@@ -8242,7 +8243,8 @@ PrefabInstance:
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
       propertyPath: dialogoFinal
-      value: 'En esta mesa hay una nota que dice: "en 10 seg se reinica el escenario"'
+      value: "Durante mucho tiempo las iglesias fueron parte de la expaci\xF3n de
+        conocimiento, es posible que te encuentres algo bueno en esos lugares"
       objectReference: {fileID: 0}
     - target: {fileID: 8149442843524621158, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
@@ -11691,6 +11693,36 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2026484540}
+    - target: {fileID: 1069559993767648227, guid: 1245e06797635464b96fd1cc9944ce13,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1069559993767648227, guid: 1245e06797635464b96fd1cc9944ce13,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1069559993767648227, guid: 1245e06797635464b96fd1cc9944ce13,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1069559993767648227, guid: 1245e06797635464b96fd1cc9944ce13,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2026484540}
+    - target: {fileID: 1069559993767648227, guid: 1245e06797635464b96fd1cc9944ce13,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SalirAlMapaGeneral
+      objectReference: {fileID: 0}
+    - target: {fileID: 1069559993767648227, guid: 1245e06797635464b96fd1cc9944ce13,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 1069559994420572341, guid: 1245e06797635464b96fd1cc9944ce13,
         type: 3}
       propertyPath: m_Name
@@ -11816,6 +11848,21 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2026484540}
+    - target: {fileID: 1796463705556430263, guid: 1245e06797635464b96fd1cc9944ce13,
+        type: 3}
+      propertyPath: m_fontColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796463705556430263, guid: 1245e06797635464b96fd1cc9944ce13,
+        type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1796463705556430263, guid: 1245e06797635464b96fd1cc9944ce13,
+        type: 3}
+      propertyPath: m_fontColor.b
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7992606290719558192, guid: 1245e06797635464b96fd1cc9944ce13,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

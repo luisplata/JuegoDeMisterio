@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MapaGeneral.unity
+    guid: 68bc1c8599308764d965a3c7a74ff188
+  - enabled: 1
     path: Assets/Scenes/isometric_escena.unity
     guid: 5975df4ec7866b548baab887e7b2a735
+  - enabled: 1
+    path: Assets/Scenes/Iglesia_escena.unity
+    guid: b735c4c09678b9f4598728880a5256a5
   m_configObjects: {}
