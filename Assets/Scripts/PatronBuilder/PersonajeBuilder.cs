@@ -7,7 +7,8 @@ public class PersonajeBuilder : MonoBehaviour
     private Genero genero;
     private Piel piel;
     private Ropa ropa;
-    private Personaje pj;
+    [SerializeField]private Personaje pj;
+    public GameObject panelFoto;
 
     public PersonajeBuilder ConGenero(Genero g)
     {
@@ -35,11 +36,23 @@ public class PersonajeBuilder : MonoBehaviour
 
     public Personaje Build()
     {
-        var personaje = GameObject.Instantiate(pj);
-        var gen = GameObject.Instantiate(genero,personaje.transform);
-        var rop = GameObject.Instantiate(ropa, personaje.transform);
+        var personaje = GameObject.Instantiate(pj, panelFoto.transform);
         var pil = GameObject.Instantiate(piel, personaje.transform);
+        var rop = GameObject.Instantiate(ropa, personaje.transform);
+        var gen = GameObject.Instantiate(genero, personaje.transform);
         personaje.SetComponents(gen, pil, rop);
+        personaje.transform.localScale = new Vector3(45, 45, 0);
+        rop.ColocarPosicion();
+        gen.ColocarPosicion();
+        personaje.SetComponents(gen, pil, rop);
+
+        //ahora creamos el playerpref de su PJ
+        PlayerPrefs.SetInt("primeraVez", 1);
+        PlayerPrefs.SetString("genero", gen.name);
+        PlayerPrefs.SetString("ropa", rop.name);
+        PlayerPrefs.SetString("piel", pil.name);
+
+
         return personaje;
     }
 

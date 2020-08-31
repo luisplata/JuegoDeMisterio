@@ -14,6 +14,7 @@ public class ObjetoInteractuable : MonoBehaviour
     private Button boton;
     public int distancia;
     public bool visitado = false;
+    public GameObject botonMapaGeneral;
     private void Start()
     {
         padre = GameObject.Find("ControladorDeEscenario").GetComponent<TeoriaDeGrafos>();
@@ -29,7 +30,16 @@ public class ObjetoInteractuable : MonoBehaviour
         //Debug.Log(padre.verticeFinal.gameObject.name + " - " + this.name+ " son iguales -> "+ padre.verticeFinal.Equals(this));
         if (padre.verticeFinal.Equals(this))
         {
-            dialogos.Add(dialogoFinal);
+            if (PlayerPrefs.GetString("escenaSeleccionada").Equals(ConstantesDelProyecto.ESCENA_MAPA_IGLESIA))
+            {
+                dialogos.Add(padre.dialogoSegunElTiempoTranscurrido());
+            }
+            else
+            {
+                dialogos.Add(dialogoFinal);
+            }
+            botonMapaGeneral.SetActive(true);
+            
         }
         else
         {

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TeoriaDeGrafos : MonoBehaviour
 {
@@ -157,4 +158,50 @@ public class TeoriaDeGrafos : MonoBehaviour
         return i;
     }
 
+    public string dialogoSegunElTiempoTranscurrido()
+    {
+        DateTime horaFinal = DateTime.Now;
+        string respuesta = "";
+        //sacamos de los player prefs el dato
+        if (!PlayerPrefs.HasKey("tiempo"))
+        {
+            horaFinal.AddMinutes(20);
+        }
+        else
+        {
+            horaFinal = DateTime.Parse(PlayerPrefs.GetString("tiempo"));//HH:mm
+        }
+
+        float tiempoTranscurrido = ((DateTime.Now.Hour - horaFinal.Hour)*60)+(DateTime.Now.Minute - horaFinal.Minute);
+        Debug.LogError("Esta es la diferecia " + tiempoTranscurrido);
+        if(tiempoTranscurrido < ConstantesDelProyecto.TIEMPOMINIMO)
+        {
+            //resultado bueno
+            respuesta = string.Format("Te encuentras con {0} oliendo completamente a alcohol, abre los ojos y te sonrie. Sabiendo lo que eso significa", PlayerPrefs.GetString("genero").Contains("Femenino")? "Arturo":"Alba");
+        }
+        else if(tiempoTranscurrido > ConstantesDelProyecto.TIEMPOMINIMO && tiempoTranscurrido < (ConstantesDelProyecto.TIEMPOMINIMO * ConstantesDelProyecto.TIEMPO_PRIMER_AVISO))
+        {
+            //resultado no tan bieno
+            respuesta = string.Format("Encontraste rastros de sangre en el piso, sabiendo perfectamente que es de {0}, al final del pasillo ves que esta {1} tirado en el piso. Todo estará bien le dices a {0}", PlayerPrefs.GetString("genero").Contains("Femenino") ? "el": "ella", PlayerPrefs.GetString("genero").Contains("Femenino") ? "Arturo": "Alba");
+        }else if (tiempoTranscurrido > (ConstantesDelProyecto.TIEMPOMINIMO * ConstantesDelProyecto.TIEMPO_PRIMER_AVISO) && tiempoTranscurrido < (ConstantesDelProyecto.TIEMPOMINIMO * ConstantesDelProyecto.TIEMPO_SEGUNDO_AVISO))
+        {
+            //resultado malo
+            respuesta = string.Format("El olor a sangre es muy intenso, no parece ser sangre fresca, {0} conoces muy bien a {1} como para equivocarte con su sangre, {0} buscas por todos lados, solo encuentras un cuerpo casi disecado. Esta muert{2}.", PlayerPrefs.GetString("genero").Contains("Femenino") ? "lo": "la", PlayerPrefs.GetString("genero").Contains("Femenino") ? "Arturo": "Alba", PlayerPrefs.GetString("genero").Contains("Femenino") ? "o" : "a");
+        }else if (tiempoTranscurrido > (ConstantesDelProyecto.TIEMPOMINIMO * ConstantesDelProyecto.TIEMPO_SEGUNDO_AVISO))
+        {
+            //valio verga
+            respuesta = string.Format("Llegas al lugar donde se encuentra {0}, encuentras un cuerpo sin cabeza... sabes que {1} esta muert{2} y te pones a llorar. Tardaste 100 años en superarlo.", PlayerPrefs.GetString("genero").Contains("Femenino") ?  "Arturo": "Alba", PlayerPrefs.GetString("genero").Contains("Femenino") ? "el": "ella", PlayerPrefs.GetString("genero").Contains("Femenino") ? "o": "a");
+        }
+        StartCoroutine(DialogoFinalConMandadaHaciaInicio());
+
+        return respuesta;
+    }
+
+    IEnumerator DialogoFinalConMandadaHaciaInicio()
+    {
+        yield return new WaitForSeconds(15);
+        //eliminamos todo playerpref
+        PlayerPrefs.DeleteAll();
+        SceneManager.LoadScene(ConstantesDelProyecto.ESCENA_INICIAL);
+    }
 }

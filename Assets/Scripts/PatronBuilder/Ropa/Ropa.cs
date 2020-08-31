@@ -3,10 +3,11 @@ using System.Collections;
 
 public abstract class Ropa : MonoBehaviour
 {
-    private void Awake()
+    public void ColocarPosicion()
     {
+
         //0.83
         //-1.94
-        transform.position = new Vector2(3.22f, -1.51f);
+        transform.localPosition = new Vector2(0, -1.52f);
     }
 }

@@ -3,10 +3,10 @@ using System.Collections;
 
 public abstract class Genero : MonoBehaviour
 {
-    private void Awake()
+    public void ColocarPosicion()
     {
         //3.27
         //0.55
-        transform.position = new Vector2(3.27f, 0.55f);
+        transform.localPosition = new Vector2(0, 0.55f);
     }
 }

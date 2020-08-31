@@ -6,12 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Titulo_de_juego.unity
+    guid: f2fb3f2ee1724d246b1704b30f0cbb65
+  - enabled: 1
     path: Assets/Scenes/MapaGeneral.unity
     guid: 68bc1c8599308764d965a3c7a74ff188
   - enabled: 1
-    path: Assets/Scenes/isometric_escena.unity
+    path: Assets/Scenes/escena_bar.unity
     guid: 5975df4ec7866b548baab887e7b2a735
   - enabled: 1
-    path: Assets/Scenes/Iglesia_escena.unity
+    path: Assets/Scenes/escena_Iglesia.unity
     guid: b735c4c09678b9f4598728880a5256a5
+  - enabled: 1
+    path: Assets/Scenes/escena_creacion.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

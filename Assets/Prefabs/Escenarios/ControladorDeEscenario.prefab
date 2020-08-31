@@ -1,0 +1,134 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2548775716055653414
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2548775716055653411}
+  - component: {fileID: 2548775716055653408}
+  - component: {fileID: 2548775716055653409}
+  - component: {fileID: 2548775716055653410}
+  - component: {fileID: 2548775716055653405}
+  - component: {fileID: 2548775716055653404}
+  m_Layer: 0
+  m_Name: ControladorDeEscenario
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2548775716055653411
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2548775716055653414}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 535.024, y: 194.11148, z: -7.053584}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2548775716055653408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2548775716055653414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22e05e5d8da67cc40847febe0eb98e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  verticeFinal: {fileID: 0}
+  vertices:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  distanciaDesdeAqui: {fileID: 0}
+  distanciaMaxima: 0
+--- !u!114 &2548775716055653409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2548775716055653414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b40874ed11ff314480f2bd1dd7a8207, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  referenciasDePantalla:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  referenciaInicial: 3
+  panelIzquierdo: {fileID: 0}
+  panelDerecho: {fileID: 0}
+  panelDeDialogo: {fileID: 0}
+  botonSiguiente: {fileID: 0}
+  botonCerrar: {fileID: 0}
+  blooPower: {fileID: 0}
+  tiempoQuePuedeUsarElBloodPower: 5
+  corutinaParametrizable: 0
+--- !u!114 &2548775716055653410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2548775716055653414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1afe06079b8e8d346b6212e6e2f1e2fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UI: {fileID: 0}
+--- !u!114 &2548775716055653405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2548775716055653414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7d22c79e03c329479608d512c50674f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pj: {fileID: 6001156625787379768, guid: a445f3c3287ddd0458e4dd4bee68a07a, type: 3}
+  panelFoto: {fileID: 0}
+--- !u!114 &2548775716055653404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2548775716055653414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33159a80b29e8474ba40b7db837041b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  masculino: {fileID: 1066114706807653137, guid: 692d5837ae283d44497ee5337f4cfb7a,
+    type: 3}
+  femenino: {fileID: 7974454716609114391, guid: f3aa2aee82b08c641a1013e606655801,
+    type: 3}
+  blanca: {fileID: -3211606725731782437, guid: 0f1b70ebe80488541896f694aa708505, type: 3}
+  negra: {fileID: -3854171454629792248, guid: 3190c7128c1c9a54f9e898bae0862781, type: 3}
+  azul: {fileID: 4346080930995004300, guid: 87aa1dae116a0a04cb8625471dd32f4c, type: 3}
+  roja: {fileID: 2032370883811017964, guid: 66b7c113494c24b44b5559cfe285c189, type: 3}
+  personajeBuilder: {fileID: 2548775716055653405}

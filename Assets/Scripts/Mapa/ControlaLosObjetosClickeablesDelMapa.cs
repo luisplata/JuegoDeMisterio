@@ -46,17 +46,18 @@ public class ControlaLosObjetosClickeablesDelMapa : MonoBehaviour
             case "Posada":
                 break;
             case "Iglesia":
-                nombreDelEscenario = "Iglesia_escena";
+                nombreDelEscenario = ConstantesDelProyecto.ESCENA_MAPA_IGLESIA;
                 break;
             case "el Bar":
-                nombreDelEscenario = "isometric_escena";
                 break;
             case "Restaurante":
+                nombreDelEscenario = ConstantesDelProyecto.ESCENA_MAPA_PUB;
                 break;
             default:
                 break;
         }
 
+        PlayerPrefs.SetString("escenaSeleccionada", nombreDelEscenario);
         SceneManager.LoadScene(nombreDelEscenario);
     }
 

@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4926148354276336716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4926148354276336718}
+  - component: {fileID: 4926148354276336717}
+  m_Layer: 0
+  m_Name: Dialogo21
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4926148354276336718
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4926148354276336716}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 546.1966, y: 50.13158, z: -22.8125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4926148354276336717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4926148354276336716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beba64d9931c1ce4bbe6d4f629ea372a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: dialogo21
+  azul: {fileID: 4346080930995004300, guid: 87aa1dae116a0a04cb8625471dd32f4c, type: 3}
+  roja: {fileID: 2032370883811017964, guid: 66b7c113494c24b44b5559cfe285c189, type: 3}
+  negra: {fileID: -3854171454629792248, guid: 3190c7128c1c9a54f9e898bae0862781, type: 3}
+  noTanNegra: {fileID: -3211606725731782437, guid: 0f1b70ebe80488541896f694aa708505,
+    type: 3}
