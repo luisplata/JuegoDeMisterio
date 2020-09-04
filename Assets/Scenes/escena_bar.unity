@@ -1201,7 +1201,8 @@ PrefabInstance:
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
       propertyPath: dialogoMalo
-      value: la vitrina no es
+      value: Hay gente tan ostentosa que coloca partes humanas en vitrinas, mejor
+        ni lo veo.
       objectReference: {fileID: 0}
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
@@ -2192,7 +2193,8 @@ PrefabInstance:
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
       propertyPath: dialogoMalo
-      value: la silla no es
+      value: Puede que la madera sea del siglo pasado, pero aun asi aguanta mejor
+        que el hierro
       objectReference: {fileID: 0}
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
@@ -2579,7 +2581,8 @@ PrefabInstance:
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
       propertyPath: dialogoMalo
-      value: la biblioteca no es
+      value: En esa pared hay un monton de libros, creo que seria una perdida de
+        tiempo intentar leerlos todos
       objectReference: {fileID: 0}
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
@@ -3245,7 +3248,8 @@ PrefabInstance:
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
       propertyPath: dialogoMalo
-      value: el cajon no es
+      value: Quien coloca dos cajones en la mitad de un restaurante, es que estan
+        locos!
       objectReference: {fileID: 0}
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
@@ -6390,7 +6394,8 @@ PrefabInstance:
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
       propertyPath: dialogoMalo
-      value: El barman no es
+      value: "El joven que atiende la barra parece que es estra\xF1o, cuando hable
+        con el, me miro con ojos extra\xF1os."
       objectReference: {fileID: 0}
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
@@ -8179,7 +8184,8 @@ PrefabInstance:
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
       propertyPath: dialogoMalo
-      value: la mesa no es
+      value: Tal vez centarme en un mesa sirva para encontrar lo que busco, si sentado
+        lo hare.
       objectReference: {fileID: 0}
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
@@ -9099,7 +9105,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2548775714477152253}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2548775714477152254}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9b40874ed11ff314480f2bd1dd7a8207, type: 3}
@@ -10026,7 +10032,8 @@ PrefabInstance:
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
       propertyPath: dialogoMalo
-      value: el barril no es
+      value: El vino da la peor resaca de entre todos los licores, deberiamos mejor
+        tomar algo distinto
       objectReference: {fileID: 0}
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
@@ -11895,6 +11902,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1069559994634591090}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1069559994634591096 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 834709926, guid: 1245e06797635464b96fd1cc9944ce13,
+    type: 3}
+  m_PrefabInstance: {fileID: 1069559994634591090}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2548775714477152253
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12074,6 +12093,122 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93d0188e489e5fa47a7e9503879c8132, type: 3}
+--- !u!1 &2548775714477152254 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2548775716055653414, guid: 93d0188e489e5fa47a7e9503879c8132,
+    type: 3}
+  m_PrefabInstance: {fileID: 2548775714477152253}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2548775714477152255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2548775714477152254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5b7cf18246bfc646b66d65a8644b256, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio: {fileID: 2548775714477152256}
+  slider: {fileID: 1069559994634591096}
+--- !u!82 &2548775714477152256
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2548775714477152254}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c3cd3e9a2bbee5945ab821b30d7d9804, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &3888056120248690056
 PrefabInstance:
   m_ObjectHideFlags: 0

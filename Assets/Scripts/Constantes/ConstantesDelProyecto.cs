@@ -21,4 +21,5 @@ public static class ConstantesDelProyecto
     public const float TIEMPO_SEGUNDO_AVISO = 1.4f;
 
     public const string ESCENA_INICIAL = "Titulo_de_juego";
+    public const string CREDITOS = "Creditos";
 }

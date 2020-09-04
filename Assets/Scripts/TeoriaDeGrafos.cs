@@ -202,6 +202,6 @@ public class TeoriaDeGrafos : MonoBehaviour
         yield return new WaitForSeconds(15);
         //eliminamos todo playerpref
         PlayerPrefs.DeleteAll();
-        SceneManager.LoadScene(ConstantesDelProyecto.ESCENA_INICIAL);
+        SceneManager.LoadScene(ConstantesDelProyecto.CREDITOS);
     }
 }
