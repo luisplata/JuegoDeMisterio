@@ -1322,7 +1322,7 @@ PrefabInstance:
     - target: {fileID: 8149442843524621159, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
       propertyPath: m_Name
-      value: sofa
+      value: vitrina
       objectReference: {fileID: 0}
     - target: {fileID: 8149442843524621178, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
@@ -12123,7 +12123,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c3cd3e9a2bbee5945ab821b30d7d9804, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 9dd80a5a8fad79e42a7f42232e1a3f0f, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

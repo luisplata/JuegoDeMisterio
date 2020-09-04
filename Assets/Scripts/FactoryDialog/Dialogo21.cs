@@ -23,9 +23,9 @@ public class Dialogo21 : Dialogo
         factoriaDeDialogos.ConRopa(referencia.roja);
     }
 
-    public const string DIALOGO9 = "Pensamiento: El barman me mira con una mirada codiciosa y no se si es posible adivinar lo que le guste al barman: dinero, mujeres, u otra cosa.";
-    public const string DIALOGO10 = "Disculpe mi buen barman, quisiera pedir una cerveza fría por favor, y te quedas con el cambio. (le entregas un billete de $100 y la bebida cuesta $10)|Disculpe mi buen barman, quisiera pedir un Martini por favor, y te quedas con el cambio. (le entregas un billete de $100 y la bebida cuesta $40)";
-    public const string DIALOGO11 = "Player: En la cara del cantinero aparece una sonrisa avariciosa, menos mal atine a lo que quería.";
+    public const string DIALOGO9 = "Pensamiento: Lográs distinguir codicia en la mirada del barman, pero no sabes si su interés es el dinero, las mujeres, u otra cosa.";
+    public const string DIALOGO10 = "Le compras una bebida de $10 y le ofreces el cambio de $90|Le compras una bebida de $40 y le ofreces el cambio de $60";
+    public const string DIALOGO11 = "Pensamiento: En la cara del cantinero aparece una sonrisa avariciosa, sentís que atinaste a lo que quería.";
     public const string DIALOGO12 = "Barman: Gracias por entender las políticas del lugar, lo invito a sentarse.";
     public const string DIALOGO13 = "(debes tocar en la silla de la barra)";
 }

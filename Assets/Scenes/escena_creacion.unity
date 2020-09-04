@@ -525,8 +525,8 @@ PrefabInstance:
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
       propertyPath: dialogoBueno
-      value: Se observa algo muy peculiar en el cajo que esta en la pared, al medio
-        de todas las botellas
+      value: "adem\xE1s son medallas guardadas en la caja que est\xE1 sobre estos
+        estantes (y se\xF1ala la caja)."
       objectReference: {fileID: 0}
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
@@ -905,9 +905,8 @@ PrefabInstance:
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
       propertyPath: dialogoBueno
-      value: "Aqui hay algo escrito en un rincon que no se ve casi. \"MESA 4\"\nEs
-        la mesa que esta a la izquierda del escenario.\nPuedes usar tu poder de sangre
-        \"Powe Blood\" que te dar\xE1 la capacidad de ver lo que un humano no."
+      value: "En el sof\xE1 se llega a ver una peque\xF1a inscripci\xF3n, tallada.
+        \u201CMESA 4\u201D"
       objectReference: {fileID: 0}
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
@@ -918,10 +917,7 @@ PrefabInstance:
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
       propertyPath: dialogoFinal
-      value: "Despues de sentarse, te diste cuenta que habian unas fotos. Que muestra
-        una ubicaci\xF3n.\nPero todos en el bar te quedan viendo, como si estivieran
-        viendo a un demonio. Tienes los ojos rojos, casi negros, ten cuidado con
-        este poder\nPreciona el bot\xF3n de \"Mapa General\" e ingresa al Restaurante"
+      value: "Al sentarte se ven unas fotos se\xF1alando una ubicaci\xF3n, un Restaurante."
       objectReference: {fileID: 0}
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
@@ -1283,10 +1279,10 @@ PrefabInstance:
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
       propertyPath: dialogoBueno
-      value: 'La madera de este objeto es peculiar, es una madera masisa como si
-        fuera antigua, como ese sofa.
-
-        El sofa esta a la derecha del escenario'
+      value: "Viendo la caja recordas que antes no estaba ah\xED, tal vez los premios
+        sean nuevos pero recordas haber visto esa caja en la peque\xF1a mesa frente
+        al sof\xE1 en el que siempre te sentabas. La mesa ya no est\xE1, el sof\xE1
+        sigue ah\xED.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
@@ -1479,9 +1475,9 @@ PrefabInstance:
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
       propertyPath: dialogoBueno
-      value: la madera es antes que el papel. hay mucho en este bar, pero solo veo
-        un papel en este bar, y parece que esta colocado recientemente. Es el que
-        indica "no fumar"
+      value: "Cuando te par\xE1s para ver el barril de frente, ves el cartel de \u201CNo
+        fumar\u201D que pusieron hace unos a\xF1os, no te gusta recordar que sos
+        de otra \xE9poca, y ese cartel lo hace."
       objectReference: {fileID: 0}
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
@@ -2314,10 +2310,10 @@ PrefabInstance:
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
       propertyPath: dialogoBueno
-      value: 'Nuestrea cerveza de barril, es la mejor, tiene premios de talla mundial...
-
-        Es
-        el barril que esta en la barra'
+      value: "Te sintas en la silla de la barra, y ves una inscripci\xF3n que dice
+        \u201CNuestra cerveza de barril ha obtenido multiples premios internacionales\u201D
+        Le pudes preguntar al barman cuales son los premios, y te responde que uno
+        es el peque\xF1o barril que est\xE1 en la barra."
       objectReference: {fileID: 0}
     - target: {fileID: 8149442843524621157, guid: da9d7fb54638b6946a47194b105093b4,
         type: 3}
