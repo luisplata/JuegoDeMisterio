@@ -33,7 +33,7 @@ public class Dialogo20 : Dialogo
     public const string DIALOGO3 = "Soy arturo|Soy Alba";
     public const string DIALOGO4 = "Barman: Quien es usted para la persona que busca, es uno de mis mejores clientes, y uno muy apreciado por mi.";
     public const string DIALOGO5 = "Barman: Tambien estoy preocupado por el, pero mi situación me impide hacer algo. Tengo poco más de tres días que no pasa por aquí, no tengo más información.";
-    public const string DIALOGO6 = "Player: Arturo: Me gustaría que me ayudara con información de la ultima noche en la que estuvo aquí.";
+    public const string DIALOGO6 = "Player: Me gustaría que me ayudara con información de la ultima noche en la que estuvo aquí.";
     public const string DIALOGO7 = "Barman: Claro, estuvo aquí la noche de hace tres días, pero por políticas del lugar no puedo decir más sobre ello, si es que me entiende. ";
     public const string DIALOGO8 = "Barman: Lamento no ser de mucha ayuda en mis condiciones.";
 

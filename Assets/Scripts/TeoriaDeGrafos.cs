@@ -177,20 +177,24 @@ public class TeoriaDeGrafos : MonoBehaviour
         if(tiempoTranscurrido < ConstantesDelProyecto.TIEMPOMINIMO)
         {
             //resultado bueno
-            respuesta = string.Format("Te encuentras con {0} oliendo completamente a alcohol, abre los ojos y te sonrie. Sabiendo lo que eso significa", PlayerPrefs.GetString("genero").Contains("Femenino")? "Arturo":"Alba");
+            //Te encuentras con {0}, sus vestiduras están manchadas y rotas, no tienes certeza de si está vivo hasta que abre un ojo y te sonríe. Aún sigue completamente ebri{1}
+            respuesta = string.Format("Te encuentras con {0}, sus vestiduras están manchadas y rotas, no tienes certeza de si está vivo hasta que abre un ojo y te sonríe. Aún sigue completamente ebri{1}.", PlayerPrefs.GetString("genero").Contains("Femenino")? "Arturo":"Alba", PlayerPrefs.GetString("genero").Contains("Femenino") ?"o":"a");
         }
         else if(tiempoTranscurrido > ConstantesDelProyecto.TIEMPOMINIMO && tiempoTranscurrido < (ConstantesDelProyecto.TIEMPOMINIMO * ConstantesDelProyecto.TIEMPO_PRIMER_AVISO))
         {
             //resultado no tan bieno
-            respuesta = string.Format("Encontraste rastros de sangre en el piso, sabiendo perfectamente que es de {0}, al final del pasillo ves que esta {1} tirado en el piso. Todo estará bien le dices a {0}", PlayerPrefs.GetString("genero").Contains("Femenino") ? "el": "ella", PlayerPrefs.GetString("genero").Contains("Femenino") ? "Arturo": "Alba");
+            //Logras distinguir un rastro de sangre en el piso, una mezcla de sexto sentido y familiaridad te dice que es de tu amad{0}. Persigues el rastro hasta encontrarte con {1}, le intentas convencer de que todo estará bien.
+            respuesta = string.Format("Encontraste rastros de sangre en el piso, sabiendo perfectamente que es de {0}, al final del pasillo ves que esta {1} tirado en el piso. Todo estará bien le dices a {0}.", PlayerPrefs.GetString("genero").Contains("Femenino") ? "o": "a", PlayerPrefs.GetString("genero").Contains("Femenino") ? "Arturo": "Alba");
         }else if (tiempoTranscurrido > (ConstantesDelProyecto.TIEMPOMINIMO * ConstantesDelProyecto.TIEMPO_PRIMER_AVISO) && tiempoTranscurrido < (ConstantesDelProyecto.TIEMPOMINIMO * ConstantesDelProyecto.TIEMPO_SEGUNDO_AVISO))
         {
             //resultado malo
-            respuesta = string.Format("El olor a sangre es muy intenso, no parece ser sangre fresca, {0} conoces muy bien a {1} como para equivocarte con su sangre, {0} buscas por todos lados, solo encuentras un cuerpo casi disecado. Esta muert{2}.", PlayerPrefs.GetString("genero").Contains("Femenino") ? "lo": "la", PlayerPrefs.GetString("genero").Contains("Femenino") ? "Arturo": "Alba", PlayerPrefs.GetString("genero").Contains("Femenino") ? "o" : "a");
+            //Hay un olor a sangre pestilente, no es ese olor que despierta a tu bestia en busca de alimento, parece ser sangre vieja… y de {0}. Luego de un buen tiempo buscando, solo lográs encontrar su cuerpo muerto, prácticamente seco.
+            respuesta = string.Format("Hay un olor a sangre pestilente, no es ese olor que despierta a tu bestia en busca de alimento, parece ser sangre vieja… y de {0}. Luego de un buen tiempo buscando, solo lográs encontrar su cuerpo muerto, prácticamente seco.", PlayerPrefs.GetString("genero").Contains("Femenino") ? "el": "ella");
         }else if (tiempoTranscurrido > (ConstantesDelProyecto.TIEMPOMINIMO * ConstantesDelProyecto.TIEMPO_SEGUNDO_AVISO))
         {
             //valio verga
-            respuesta = string.Format("Llegas al lugar donde se encuentra {0}, encuentras un cuerpo sin cabeza... sabes que {1} esta muert{2} y te pones a llorar. Tardaste 100 años en superarlo.", PlayerPrefs.GetString("genero").Contains("Femenino") ?  "Arturo": "Alba", PlayerPrefs.GetString("genero").Contains("Femenino") ? "el": "ella", PlayerPrefs.GetString("genero").Contains("Femenino") ? "o": "a");
+            //Logras distinguir un cuerpo en el suelo… Mientras te acercas para corroborar distingues la túnica que le habías regalado… No hay otra opción, es {0}, su cuerpo está desprendido de su cabeza que no logras encontrar por más que busques. 
+            respuesta = string.Format("Logras distinguir un cuerpo en el suelo… Mientras te acercas para corroborar distingues la túnica que le habías regalado… No hay otra opción, es {0}, su cuerpo está desprendido de su cabeza que no logras encontrar por más que busques.", PlayerPrefs.GetString("genero").Contains("Femenino") ?  "Arturo": "Alba");
         }
         StartCoroutine(DialogoFinalConMandadaHaciaInicio());
 
@@ -199,7 +203,7 @@ public class TeoriaDeGrafos : MonoBehaviour
 
     IEnumerator DialogoFinalConMandadaHaciaInicio()
     {
-        yield return new WaitForSeconds(15);
+        yield return new WaitForSeconds(20);
         //eliminamos todo playerpref
         PlayerPrefs.DeleteAll();
         SceneManager.LoadScene(ConstantesDelProyecto.CREDITOS);
